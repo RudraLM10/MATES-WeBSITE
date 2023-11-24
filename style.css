@@ -8,6 +8,16 @@
   scroll-behavior: smooth;
 }
 
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fefcfe url(images/WhatsApp-Video-2020-12-08-at-105.gif) no-repeat
+    center;
+  z-index: 99999;
+  background-size: contain;
+}
+
 /* HOME PAGE AND NAVBAR */
 
 .home-header {
@@ -539,13 +549,13 @@ h3 {
   justify-content: center;
 }
 
-.full-img img{
+.full-img img {
   width: 90%;
   cursor: pointer;
   max-width: 500px;
 }
 
-.full-img span{
+.full-img span {
   position: absolute;
   top: 5%;
   right: 5%;
