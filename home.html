@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- Adding Meta tags -->
-      <meta
+    <!-- Adding Meta tags -->
+    <meta
       name="description"
       content="Materials Engineering Society (MatES), IIT PATNA is an association of UG & PG students, college faculty and staff of the Department of Metallurgical and Materials Engineering of IIT Patna."
     />
@@ -19,13 +19,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="lightbox.css" />
     <script defer src="script.js"></script>
     <title>MatES</title>
   </head>
   <body>
     <header class="home-header">
       <nav>
-        <a href="home.html"><img src="mates_img/Mlogo.png" class="logo" /></a>
+        <a href="home.html"><img src="images/Mlogo.png" class="logo" /></a>
 
         <div class="nav-links" id="navLinks">
           <i class="fa-solid fa-xmark closemenu"></i>
@@ -70,7 +71,7 @@
 
         <div class="row">
           <div class="events-col">
-            <img src="mates_img/first.jpeg" />
+            <img src="images/first.jpeg" />
             <div class="layer">
               <p>
                 Have you ever questioned how aluminum, so soft that you can bend
@@ -81,7 +82,7 @@
             </div>
           </div>
           <div class="events-col">
-            <img src="mates_img/second.jpeg" />
+            <img src="images/second.jpeg" />
             <div class="layer">
               <p>
                 Have you ever thought about why satellites are covered in Gold
@@ -91,7 +92,7 @@
             </div>
           </div>
           <div class="events-col">
-            <img src="mates_img/third.jpeg" />
+            <img src="images/third.jpeg" />
             <div class="layer">
               <p>
                 Uncover the mysteries about the materials you are surrounded
@@ -104,38 +105,25 @@
         </div>
       </section>
 
-      <section class="gallery" id="gallery">
+      <section class="photos" id="gallery">
         <h1>Photo Gallery</h1>
 
-        <div class="row">
-          <div class="gallery-col">
-            <img src="mates_img/library.png" />
-            <h3>World Class Library</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at
-              maiores optio!
-            </p>
-          </div>
-          <div class="gallery-col">
-            <img src="mates_img/basketball.png" />
-            <h3>Largest Play Ground</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at
-              maiores optio!
-            </p>
-          </div>
-          <div class="gallery-col">
-            <img src="mates_img/cafeteria.png" />
-            <h3>Tasty and Healthy Food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at
-              maiores optio!
-            </p>
-          </div>
+        <div class="full-img" id="fullImgBox">
+          <img src="/images/second.jpeg" id="fullImg"/>
+          <span onclick="closeFullImg()">X</span>
+        </div>
+
+        <div class="img-gallery">
+          <img src="/images/second.jpeg" onclick="openFullImg(this.src)" />
+          <img src="/images/second.jpeg"  />
+          <img src="/images/second.jpeg"  />
+          <img src="/images/second.jpeg"  />
+          <img src="/images/second.jpeg"  />
+          <img src="/images/second.jpeg"  />
+          <img src="/images/second.jpeg"  />
+          <img src="/images/second.jpeg"  />
         </div>
       </section>
-
-      
 
       <section class="cta">
         <h1>WE STAND AHEAD IN QUALITY</h1>
@@ -147,7 +135,7 @@
       <div class="footer-left">
         <div class="footer-left-items">
           <img
-            src="mates_img/Mlogo.png"
+            src="images/Mlogo.png"
             class="footer-logo"
             border="1"
             alt="MatES"
