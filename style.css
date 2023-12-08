@@ -8,13 +8,23 @@
   scroll-behavior: smooth;
 }
 
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fefcfe url(images/WhatsApp-Video-2020-12-08-at-105.gif) no-repeat
+    center;
+  z-index: 99999;
+  background-size: contain;
+}
+
 /* HOME PAGE AND NAVBAR */
 
 .home-header {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(mates_img/landing.png);
+    url(images/landing.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -255,38 +265,37 @@ h3 {
 }
 
 @media (max-width: 700px) {
-
   .layer p {
     font-size: 1rem;
   }
 }
 
-/* gallery */
+/* photos */
 
-.gallery {
+.photos {
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
 }
 
-.gallery-col {
+.photos-col {
   flex-basis: 31%;
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
 }
 
-.gallery-col img {
+.photos-col img {
   width: 100%;
   border-radius: 10px;
 }
 
-.gallery-col p {
+.photos-col p {
   padding: 0;
 }
 
-.gallery-col h3 {
+.photos-col h3 {
   margin-top: 16px;
   margin-bottom: 15px;
   text-align: left;
@@ -297,7 +306,7 @@ h3 {
   margin: 100px auto;
   width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("mates_img/gif.gif");
+    url("images/gif.gif");
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -344,7 +353,6 @@ h3 {
 }
 
 
-
 .footer-distributed .footer-left {
   width: 40%;
 }
@@ -370,16 +378,21 @@ h3 {
   margin-right: 20px;
 }
 
+
 .footer-distributed h3 {
   color: #ffffff;
   font: normal 36px 'Open Sans', cursive;
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Open Sans", cursive;
+
   margin: 0;
 }
 
 .footer-distributed h3 span {
   color: lightseagreen;
 }
-
 
 
 .footer-distributed .footer-links {
@@ -402,8 +415,6 @@ h3 {
   font-weight: normal;
   margin: 0;
 }
-
-
 
 .footer-distributed .footer-center {
   width: 35%;
@@ -445,7 +456,6 @@ h3 {
 .footer-distributed .footer-center p a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  ;
 }
 
 .footer-distributed .footer-links a:before {
@@ -505,8 +515,51 @@ h3 {
   margin-bottom: 5px;
 }
 
-
 @media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+  .footer-left-items {
+    justify-content: center;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
 
   .footer-distributed {
     font: bold 14px sans-serif;
@@ -530,3 +583,19 @@ h3 {
   }
 
 }
+
+.full-img img {
+  width: 90%;
+  cursor: pointer;
+  max-width: 500px;
+}
+
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
