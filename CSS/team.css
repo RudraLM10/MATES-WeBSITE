@@ -28,6 +28,7 @@ nav {
     align-items: center;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 nav img {
